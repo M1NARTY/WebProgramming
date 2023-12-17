@@ -1,0 +1,12 @@
+.top h1  {
+    display: inline;
+    color: #dfe0e1;
+    margin-left: 10px;
+}
+
+.box {
+    margin : 20px; 
+    padding : 30px;
+    border : 1px solid black;
+    border-radius : 5px;
+}

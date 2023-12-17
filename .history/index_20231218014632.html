@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Mainly</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="title">
+            <span>M</span>
+            <span>a</span>
+            <span>i</span>
+            <span>n</span>
+            <span>l</span>
+            <span>y</span>
+        </h1>
+
+        <div class="button-box">
+            <button type="button" class="btn" onclick="location.href='./sunsetSunrise.html'">일출 일몰</button>
+            <button type="button" class="btn" onclick="location.href='./feelLuck.html'">I'm Feeling Lucky</button>
+        </div>
+        <div class="weather-box">
+            <button id="weatherbtn" type="button">현재 날씨 불러오기!</button>
+            <dl>
+                <dt>기온</dt>
+                <dd class="temper"></dd>
+                <dt>위치</dt>
+                <dd class="place"></dd>
+                <dt>설명</dt>
+                <dd class="describe"></dd>
+            </dl>
+            <script src="./weather.js"></script>
+        </div>
+    </body>
+</html>

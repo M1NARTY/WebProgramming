@@ -1,0 +1,83 @@
+body {
+    background-color:#202027;
+    font-family: "Roboto";
+    height: 100%;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #dfe0e1;
+}
+.top {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+.top h1  {
+    font-family: "Roboto";
+    color: #dfe0e1;
+    margin-left: 50px;
+}
+
+.box {
+    width: 616px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid #DFE1E5;
+    border-radius: 24px;
+    background: #FFF;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    margin: 0 auto;
+    margin-top: 26px;
+    gap: 20px;
+}
+
+.game2   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    margin: 0 auto;
+    margin-top: 26px;
+    gap: 20px;
+    zoom:3.0;
+}
+
+.game button:nth-child(1) {
+    width: 111px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #dfe0e1;
+    background: #F9F0FA;
+}
+.game button:nth-child(2) {
+    width: 111px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #dfe0e1;
+    background: #F9F0FA;
+}
+
+.highway {
+    position: relative;
+    padding-top: 75%;
+    width: 100%;
+}
+
+.highway > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}

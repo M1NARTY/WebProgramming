@@ -1,0 +1,14 @@
+.title {
+    text-align: center;
+    margin-top: 232px;
+}
+
+.searchbar {
+    display: block;
+    margin: 0 auto;
+    width: 616px;
+    height: 46px;
+    border-radius: 24px;
+    border: 1px solid #DFE1E5;
+    background: #FFF;
+}
