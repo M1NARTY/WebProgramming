@@ -4,30 +4,26 @@
         <meta charset="UTF-8">
         <title>Mainly Sun</title>
         <link rel="stylesheet" href="css/sunsetSunrise.css">        
-        <script defer src="js/sun.js"></script>
+        <script defer src="js/sun.js">
+            var currentDate = new Date();
+        </script>
     </head>
     <body>
-        <h1 class="title"><a href="./index.html">
+        <h1 class="title">
             <span>M</span>
             <span>a</span>
             <span>i</span>
             <span>n</span>
             <span>l</span>
             <span>y</span>
-        </a></h1>
+        </h1>
         <div class="button">
             <button type="button" id="btn">경기 남부 지역 일출/일몰 시간 확인하기</button>
         </div>
         <div class="sunBox">
             <dl>
                 <p>기준 일자</p>
-                <p id="date"><script>
-                    // var date = new Date();
-                    // var year = date.getFullYear();
-                    // var month = ("0" + (1 + date.getMonth())).slice(-2);
-                    // var day = ("0" + date.getDate()).slice(-2);
-                    // document.write(year + "-" + month + "-" + day);
-                </script></p>
+                <p id="date"><script>document.write(currentDate)</script></p>
                 <p>해돋이 일출 시간</p>
                 <p id="riseTime"></p>
                 <p>해넘이 일몰 시간</p>

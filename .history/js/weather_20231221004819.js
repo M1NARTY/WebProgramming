@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 // console.log(data);
                 var items = data.response.body.items;
 
-                if(!items) {
+                if (!items) {
                     throw new Error('API 응답 데이터에서 "items"를 찾을 수 없습니다.');
                 }
 
-                if(Array.isArray(items)) {
+                if (Array.isArray(items)) {
                     items.forEach(item => {
                         var location = item.stnNm || '데이터 없음';
                         var minTemperature = item.minTa || '데이터 없음';
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         weatherInfoAvgTemperature += `<p>${avgTemperature}</p>`
                         weatherInfoMaxTemperature += `<p>${maxTemperature}</p>`
                     });
-                } else if(Array.isArray(items.item)) {
+                } else if (Array.isArray(items.item)) {
                     items.item.forEach(item => {
                         var location = item.stnNm || '데이터 없음';
                         var minTemperature = item.minTa || '데이터 없음';
