@@ -3,11 +3,11 @@ var computerScore = 0;
 
 function showMessage(message) {
     var messageElement = document.createElement('p');
-    messageContainer.innerHTML = "";
+    messageContainer.innerHTML = ""; // 이전 메시지를 삭제합니다.
 
     var messageElement = document.createElement('p');
     messageElement.innerText = message;
-    messageContainer.appendChild(messageElement);
+    messageContainer.appendChild(messageElement); // 새 메시지를 추가합니다.
 }
 
 function playGame(userChoice) {
