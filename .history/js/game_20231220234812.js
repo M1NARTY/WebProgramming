@@ -4,6 +4,7 @@ var computerScore = 0;
 function showMessage(message) {
     var messageElement = document.createElement('p');
     messageContainer.innerHTML = ""; // 이전 메시지를 삭제합니다.
+    document.body.appendChild(messageElement);
 
     var messageElement = document.createElement('p');
     messageElement.innerText = message;

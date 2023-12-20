@@ -3,12 +3,26 @@ var computerScore = 0;
 
 function showMessage(message) {
     var messageElement = document.createElement('p');
-    messageContainer.innerHTML = ""; // 이전 메시지를 삭제합니다.
-
-    var messageElement = document.createElement('p');
-    messageElement.innerText = message;
-    messageContainer.appendChild(messageElement); // 새 메시지를 추가합니다.
+    messageElement.textContent = message;
+    document.body.appendChild(messageElement);
 }
+
+var gameInterval;
+
+document.getElementById("startGame").addEventListener("click", function () {
+    showMessage("게임을 시작합니다!");
+    gameInterval = setInterval(function() {
+        playGame('가위'); // 예시로 '가위'를 사용하였습니다. 실제로는 사용자의 입력을 받아야 합니다.
+    }, 1000); // 1초마다 playGame 함수를 실행합니다.
+});
+
+// document.getElementById("startGame").addEventListener("click", function () {
+//     showMessage("게임을 시작합니다!");
+// });
+
+// document.getElementById("stopGame").addEventListener("click", function () {
+//     showMessage("게임을 종료합니다!");
+// });
 
 function playGame(userChoice) {
     var choices = ['가위', '바위', '보'];
@@ -48,4 +62,9 @@ document.getElementById("rock").addEventListener("click", function () {
 
 document.getElementById("paper").addEventListener("click", function () {
     playGame('보');
+});
+
+document.getElementById("stopGame").addEventListener("click", function () {
+    showMessage("게임을 종료합니다!");
+    clearInterval(gameInterval); // 게임을 중지합니다.
 });
