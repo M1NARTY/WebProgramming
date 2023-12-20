@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var formattedPreviousDate = previousDate.toISOString().slice(0, 10).replace(/-/g, '');
 
         var url = 'http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList';
-        //var queryParams = '?serviceKey=SERVICE_KEY_HERE';
+
         var queryParams = '?' + encodeURIComponent('serviceKey')+ '=' + encodeURIComponent(decodeServiceKey);
         queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1');
         queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10');
