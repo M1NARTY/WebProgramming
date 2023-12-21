@@ -62,18 +62,18 @@ document.addEventListener('DOMContentLoaded', function() {
                         var maxTemperature = item.maxTa || '데이터 없음';
 
                         weatherInfolocation += `<p>${location}</p>`
-                        weatherInfoMinTemperature += `<p>${minTemperature} °C</p>`
-                        weatherInfoAvgTemperature += `<p>${avgTemperature} °C</p>`
-                        weatherInfoMaxTemperature += `<p>${maxTemperature} °C</p>`
+                        weatherInfoMinTemperature += `<p>${minTemperature}</p>`
+                        weatherInfoAvgTemperature += `<p>${avgTemperature}</p>`
+                        weatherInfoMaxTemperature += `<p>${maxTemperature}</p>`
                     });
                 } else {
                     throw new Error('API 응답 데이터에서 "items" 또는 "items.item"을 찾을 수 없습니다.');
                 }
 
-                document.querySelector('#location').innerHTML = weatherInfolocation;
-                document.querySelector('#minTemp').innerHTML = weatherInfoMinTemperature;
-                document.querySelector('#avgTemp').innerHTML = weatherInfoAvgTemperature;
-                document.querySelector('#maxTemp').innerHTML = weatherInfoMaxTemperature;
+                document.querySelector('#location').innerHTML = weatherInfolocation + "°C";
+                document.querySelector('#minTemp').innerHTML = weatherInfoMinTemperature + "°C";
+                document.querySelector('#avgTemp').innerHTML = weatherInfoAvgTemperature + "°C";
+                document.querySelector('#maxTemp').innerHTML = weatherInfoMaxTemperature + "°C";
             })
             .catch(error => {
                 console.error('API 요청 오류:', error);
